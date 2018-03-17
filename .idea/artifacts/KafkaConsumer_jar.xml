@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="KafkaConsumer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/KafkaConsumer_jar</output-path>
+    <root id="archive" name="KafkaConsumer.jar">
+      <element id="module-output" name="KafkaConsumer" />
+    </root>
+  </artifact>
+</component>
