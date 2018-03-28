@@ -35,6 +35,7 @@ public class ReadKafkaToHdfs {
         conf.set("dfs.namenode.kerberos.principal", "hdfs/_HOST@HADOOP.HZ.NETEASE.COM");
         conf.addResource(new Path("/home/appops/hadoop/etc/hadoop/core-site.xml"));
         conf.addResource(new Path("/home/appops/hadoop/etc/hadoop/hdfs-site.xml"));
+        conf.addResource(new Path("/home/appops/hadoop/etc/hadoop/yarn-site.xml"));
         //使用klist命令查看kerberos中凭证标示和keytab文件路径。
         //keytab文件的路径
         conf.set(KEYTAB_FILE_KEY, "/home/appops/hadoop/etc/hadoop/algo.keytab");
