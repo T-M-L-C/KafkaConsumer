@@ -23,7 +23,7 @@ public class ReadKafkaToHdfs {
 
     static {
         String nameservices = "hz-cluster3";
-        String[] namenodesAddr = {"hadoop278.lt.163.org:8020","hadoop279.lt.163.org:8020"};
+        String[] namenodesAddr = {"hadoop1:8020","hadoop2:8020"};
         String[] namenodes = {"nn1","nn2"};
         conf.set("fs.defaultFS", "hdfs://" + nameservices);
         conf.set("hadoop.security.authentication", "Kerberos");
