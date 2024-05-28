@@ -23,7 +23,7 @@ public class KafkaConsumer {
     private KafkaConsumer() {
         Properties props = new Properties();
         //zookeeper 配置
-        props.put("zookeeper.connect", "10.172.74.127:2181/ad_pangu/datacenter/kafka_online");
+        props.put("zookeeper.connect", "127.0.0.1:2181/ad_pangu/datacenter/kafka_online");
         //group 代表一个消费组
         props.put("group.id", "test-consumer-group");
 
